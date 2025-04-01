@@ -43,7 +43,7 @@ Installation:
 -Clone the repository to your local machine:
 
 -Copy
-git clone https://github.com/yourusername/memory-game.git
+git clone https://github.com/jcegan/Memory-Game-Project.git
 Navigate into the project directory:
 
 -Copy
