@@ -1,0 +1,120 @@
+body{
+    font-family: Tahoma, sans-serif;
+    background: linear-gradient(rgb(60, 56, 62) 0%, black 100%);
+    overflow: hidden;
+}
+.header{
+    background: linear-gradient(90deg, rgb(17, 23, 41) 0%, rgb(28, 45, 100) 30%, rgb(28, 45, 100) 70%, rgb(17, 23, 41) 100%);
+    color: rgb(226, 226, 226);
+    text-align: center;
+    width: 100vw;
+    margin: -8px 0 30px -8px;
+    padding-top: 10px;
+    border-bottom: 5px solid black;
+}
+h1{
+    margin-bottom: 10px;
+    font-family: courier, tahoma, sans-serif;
+}
+.card-table{
+    width: 70%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: auto;
+    pointer-events: auto;
+}
+.card-slot{
+    display: grid;
+    border-radius: 5px;
+    border: 5px solid black;
+    margin: 3px;
+    max-width:11%;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.card-slot-events{
+    pointer-events: none;
+}
+.card-slot:hover{
+    cursor: pointer;
+}
+.card-slot-ani{
+    animation: card 0.8s ease-out 1 normal;
+}
+.card-slot-ani-rev{
+    animation: card 0.8s ease-out 1 reverse;
+}
+img{
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 100%;
+    max-height: auto;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.cover{
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    background: radial-gradient(circle, rgb(11, 84, 148) 0%, rgb(28, 45, 100) 65%, rgb(28, 45, 100) 100%);
+    width: 100%;
+    height: 100%;
+}
+.cover-ani{
+    animation: cover 0.8s linear 1 normal forwards;
+}
+.cover-ani-rev{
+    animation: cover 0.8s linear 1 normal reverse;
+}
+#completion-bar{
+    background: linear-gradient(90deg, rgb(17, 23, 41) 0%, rgb(28, 45, 100) 30%, rgb(28, 45, 100) 70%, rgb(17, 23, 41) 100%);
+    width: 100vw;
+    height: 20vw;
+    border-top: 5px solid black;
+    margin-top: 30px;
+    margin-left: -8px;
+}
+#winner-msg{
+    display: none;
+    font-size: 30px;
+    color: rgb(226, 226, 226);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 50%;
+    font-family: courier, tahoma, sans-serif;
+}
+#button-rst{
+    position: absolute;
+    bottom: 75px;
+    right: 50px;
+    font-size: 16px;
+    height: 30px;
+    width: 60px;
+}
+#lives-counter{
+    position: absolute;
+    bottom: 70px;
+    right: 150px;
+    font-size: 30px;
+    color: rgb(226, 226, 226);
+    font-family: courier, tahoma, sans-serif;
+}
+@keyframes card{
+    0% {transform: scale(1, 1)}
+    50% {transform: scale(0.01, 1)}
+    100% {transform: scale(1, 1)}
+}
+@keyframes cover{
+    0% {z-index: 1}
+    49% {z-index: 1}
+    50% {z-index: -1}
+    100% {z-index: -1}
+}
