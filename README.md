@@ -40,13 +40,9 @@ Technologies Used:
 
 Installation:
 
--Clone the repository to your local machine:
-
 -Copy
 git clone https://github.com/jcegan/Memory-Game-Project.git
-Navigate into the project directory:
 
--Copy
-cd memory-game
-Open index.html in your browser to play the game.
+-Navigate into the project directory
 
+-Open Memory.html in your browser to play the game
